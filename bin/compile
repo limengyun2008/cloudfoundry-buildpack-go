@@ -97,7 +97,7 @@ then
     echo " done"
 fi
 done
-
+set -x
 name=$(cat $build/.godir)
 p=$GOPATH/src/$name
 mkdir -p $p
@@ -119,3 +119,4 @@ rm -rf $build/.cf
 
 mkdir -p $build/.profile.d
 echo 'export PATH=$PATH:$HOME/bin' > $build/.profile.d/go.sh
+
