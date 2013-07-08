@@ -48,7 +48,8 @@ fi
 export GOROOT=$cache/go
 export GOPATH=$build/.cf/go
 
-while false do
+while false 
+do
 # Check if Mercurial and Bazaar are installed
 if ! (which hg > /dev/null && which bzr > /dev/null)
 then
